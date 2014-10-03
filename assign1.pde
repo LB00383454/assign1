@@ -1,3 +1,4 @@
+//hi~
 SlotMachine machine;
 boolean rolling = false;
 // button information
