@@ -14,6 +14,8 @@ int h = 50;
 int totalScore = 500;
 
 int dice;
+
+int fid;
 // --------------------------------------------
 
 void setup() {
@@ -140,7 +142,15 @@ int d = machine.getSlotScore(3);
 int e = machine.getSlotScore(4);
 int f = machine.getSlotScore(5);
 
-totalScore += a + b + c + d + e + f;
+int g = machine.getFruitCount(0);
+int h = machine.getFruitCount(1);
+int i = machine.getFruitCount(2);
+int j = machine.getFruitCount(3);
+int k = machine.getFruitCount(4);
+int l = machine.getFruitCount(5);
+      
+      totalScore += a*g + b*h + c*i + d*j + e*k+ f*l;
+      
       
       // -------------------------------------------------
     }
@@ -158,6 +168,10 @@ void mousePressed() {
     button = !button;
   }  
 }
+
+
+
+
 
 
 
